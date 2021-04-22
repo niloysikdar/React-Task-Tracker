@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
@@ -58,7 +58,6 @@ body {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
-  cursor: pointer;
 }
 
 .task.reminder {
