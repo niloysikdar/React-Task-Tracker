@@ -4,6 +4,9 @@ import Tasks from './components/tasks'
 import AddTask from './components/addtask'
 
 const App = () => {
+
+  const [toggleform, settoggleform] = useState(false);
+
   const [tasks, setTasks] = useState(
     [
       {
@@ -48,8 +51,8 @@ const App = () => {
 
   return (
     <div className="container">
-      <Header title="Task Tracker" />
-      <AddTask onAdd={addTaskfunc} />
+      <Header title="Task Tracker" onAddClicked={() => settoggleform(!toggleform)} isFormShowing={toggleform} />
+      {toggleform && (<AddTask onAdd={addTaskfunc} />)}
       {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />) : (<h3>No tasks to show</h3>)}
     </div>
   );
