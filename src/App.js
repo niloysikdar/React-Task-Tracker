@@ -29,7 +29,7 @@ const App = () => {
 
   // Adding a Task
   const addTaskfunc = (task) => {
-    const id = tasks.length + 1
+    const id = Math.floor(Math.random() * 2000) + 1;
     const newtask = { id, ...task };
     console.log(tasks);
     setTasks([...tasks, newtask]);
@@ -37,7 +37,10 @@ const App = () => {
   }
 
   // Delete a Task
-  const deleteTask = (id) => {
+  const deleteTask = async (id) => {
+    await fetch(`http://localhost:5000/tasks/${id}`, {
+      method: 'DELETE'
+    });
     setTasks(tasks.filter((task) => task.id !== id));
   }
 

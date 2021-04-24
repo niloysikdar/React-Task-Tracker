@@ -7,12 +7,6 @@
       "reminder": true
     },
     {
-      "id": 2,
-      "text": "This is task 2 and I need to complete",
-      "day": "Apr 2st at 5: 40pm",
-      "reminder": false
-    },
-    {
       "id": 3,
       "text": "This is task 3 and I need to complete",
       "day": "Apr 10st at 6: 30a",
