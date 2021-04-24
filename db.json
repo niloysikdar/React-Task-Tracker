@@ -1,16 +1,3 @@
 {
-  "tasks": [
-    {
-      "id": 1,
-      "text": "This is task 1 and I need to complete",
-      "day": "Apr 1st at 1: 20pm",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "This is task 3 and I need to complete",
-      "day": "Apr 10st at 6: 30a",
-      "reminder": true
-    }
-  ]
+  "tasks": []
 }
